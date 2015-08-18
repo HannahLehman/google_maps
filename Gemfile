@@ -32,6 +32,8 @@ gem 'figaro'
 gem 'starter_generators'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+gem 'pusher'
+
 
 group :production do
   gem 'pg'

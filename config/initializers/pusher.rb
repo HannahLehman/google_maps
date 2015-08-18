@@ -1,0 +1,1 @@
+Pusher.app_id = ENV["google_api_key"]
