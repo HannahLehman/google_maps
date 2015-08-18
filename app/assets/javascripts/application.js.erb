@@ -24,13 +24,20 @@ $(document).ready(function (){
       };
         
       var map = new google.maps.Map(document.getElementById('map-canvas'),
-                mapOptions);    
+                mapOptions); 
+      
+      var image = "<%= asset_path 'logo_i-love-ny.png'%>"
+      
+      var marker = new google.maps.Marker({
+        position: myLatlng,
+        map: map,
+        title: 'New York City',
+        icon: image
+      });   
     }
       
     google.maps.event.addDomListener(window, 'load', initialize);
 });
-
-
 
 
 
